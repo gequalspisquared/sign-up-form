@@ -9,7 +9,6 @@ body {
 
 .image {
     font-size: 0;
-    padding-right: 50px;
 }
 
 img { 
@@ -21,4 +20,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
