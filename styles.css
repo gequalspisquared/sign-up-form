@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
 }
 
 .content {
@@ -8,7 +11,7 @@ body {
 }
 
 .image {
-    font-size: 0;
+    font-size: 0; /* Stops white space from appearing below image */
 }
 
 img { 
@@ -16,10 +19,70 @@ img {
     width: auto;
 }
 
+label {
+    display: block;
+}
+
 .sign-up-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+}
+
+.sign-up-form>* {
+    padding-left: 50px;
+    padding-right: clamp(20px, 100px, 200px);
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    box-shadow: 2px 5px 8px #888888;
+}
+
+form>* {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c4e52;
+}
+
+input:focus {
+    border-color: #053d8b;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+}
+
+.create-account {
+    margin-top: 20px;
+}
+
+button {
+    border-style: none;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+}
+
+#create-account-btn {
+    font-weight: 700;
+    color: white;
+    background-color: #053d8b;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #053d8b;
 }
