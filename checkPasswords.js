@@ -7,7 +7,10 @@ function checkPasswordsMatch() {
 }
 
 function isEmpty() {
-    if (origPassword.value === "" || confPassword.value === "") { return true; }
+    if (origPassword.value === "" || confPassword.value === "") { 
+        return true; 
+    }
+    return false;
 }
 
 function makeInvalid() {
@@ -26,7 +29,7 @@ function makeInvalid() {
     return;
 }
 
-makeInvalid();
+makeInvalid(); // initialize to invalide
 
 origPassword.addEventListener('focus', makeInvalid);
 origPassword.addEventListener('keyup', makeInvalid);
